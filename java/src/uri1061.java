@@ -28,7 +28,7 @@ public class uri1061 {
 		int dias = duracaoSegundos / (24 * 60 * 60);
 		duracaoSegundos %= (24 * 60 * 60);
 		int horas = duracaoSegundos / (60 * 60);
-		duracaoSegundos %= 3600;
+		duracaoSegundos %= 60 * 60;
 		int minutos = duracaoSegundos / 60;
 		int segundos = duracaoSegundos % 60;
 
