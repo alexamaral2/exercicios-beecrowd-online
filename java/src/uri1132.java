@@ -1,29 +1,29 @@
 import java.util.Scanner;
 
-public class uri1071 {
+public class uri1132 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
+		int soma = 0;
+		int temp;
 		int x = sc.nextInt();
 		int y = sc.nextInt();
 
-		int min, max;
-		if (x < y) {
-			min = x;
-			max = y;
-		} else {
-			min = y;
-			max = x;
+		if (x > y) {
+			temp = x;
+			x = y;
+			y = temp;
 		}
 
-		int soma = 0;
-		for (int i = min + 1; i < max; i++) {
-			if (i % 2 != 0) {
+		for (int i = x; i <= y; i++) {
+			if (i % 13 != 0) {
 				soma += i;
 			}
 		}
+
 		System.out.println(soma);
+
 		sc.close();
 	}
 
